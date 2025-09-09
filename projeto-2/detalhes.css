@@ -1,0 +1,137 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f1f1f1;
+}
+
+header {
+  background-color: #000;
+  color: white;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  user-select: none;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #979ea5;
+}
+
+main {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgb(0 0 0 / 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-grow: 1;
+}
+
+main h1 {
+  color: #979ea5;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+main img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.15);
+  margin-bottom: 25px;
+}
+
+.info-carro p {
+  margin: 6px 0;
+  font-weight: 600;
+}
+
+.info-carro h3 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.info-carro p.description {
+  font-weight: 400;
+  margin-bottom: 30px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-whatsapp {
+  background-color: #25D366;
+  color: white;
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.15);
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebe5a;
+}
+
+footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 18px 10px;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 720px) {
+  main {
+    width: 90%;
+  }
+
+  main img {
+    max-width: 100%;
+  }
+}
